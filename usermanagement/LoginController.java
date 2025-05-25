@@ -1,11 +1,11 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class loginController {
+public class LoginController {
     private Login view;
     private UserManager userManager;
 
-    public loginController(Login view, UserManager userManager) {
+    public LoginController(Login view, UserManager userManager) {
         this.view = view;
         this.userManager = userManager;
 
