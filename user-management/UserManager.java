@@ -1,5 +1,3 @@
-
-import java.lang.classfile.attribute.StackMapTableAttribute;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -28,7 +26,7 @@ public class UserManager {
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, password);
 
-            int rowsInserted = stmt.executeUpdate();
+            int rowsInserted = preparedStatement.executeUpdate();
             return rowsInserted > 0;
 
         } catch (SQLException e) {
