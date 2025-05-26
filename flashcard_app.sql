@@ -1,0 +1,1 @@
+SELECT * FROM flashcard_app.flashcards;
